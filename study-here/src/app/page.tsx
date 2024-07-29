@@ -1,23 +1,29 @@
 import Image from "next/image";
 import Link from 'next/link';
-import {DefaultSeo} from 'next-seo'
+import {NextSeo} from 'next-seo'
 
 export default function Home() {
   function CardLink({ href, title, description }: { href: string, title: string, description: string }) {
     return (
-      <a
-        href={href}
-      >
-        <h2 className="mb-3 text-2xl font-semibold">
-          {title}{" "}
-          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-            -&gt;
-          </span>
-        </h2>
-        <p className="m-0 max-w-[30ch] text-sm opacity-50">
-          {description}
-        </p>
-      </a>
+      <>
+      <NextSeo
+        title="Simple Usage Example"
+        description="A short description goes here."
+      />
+        <a
+          href={href}
+        >
+          <h2 className="mb-3 text-2xl font-semibold">
+            {title}{" "}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className="m-0 max-w-[30ch] text-sm opacity-50">
+            {description}
+          </p>
+        </a>
+        </>
     );
   }
 
