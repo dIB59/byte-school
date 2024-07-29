@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from 'next/link';
+import {DefaultSeo} from 'next-seo'
 
 export default function Home() {
   function CardLink({ href, title, description }: { href: string, title: string, description: string }) {
