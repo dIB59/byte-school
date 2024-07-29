@@ -1,0 +1,7 @@
+spring:
+  profiles:
+    active: stage
+api:
+  stripe:
+    key: ${STRIPE_TEST_PUBLISHABLE_API_KEY}
+    secret: ${STRIPE_TEST_SECRET_API_KEY}

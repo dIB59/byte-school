@@ -1,0 +1,6 @@
+environment:
+  name: PROD
+api:
+  stripe:
+    key: ${STRIPE_PROD_PUBLISHABLE_API_KEY}
+    secret: ${STRIPE_PROD_SECRET_API_KEY}
