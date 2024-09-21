@@ -17,4 +17,5 @@ studentId: integer('student_id').references(() => students.id),
 courseId: integer('course_id').references(() => courses.id),
 }, (enrollments) => ({
 uniqueEnrollment: uniqueIndex('unique_enrollment').on(enrollments.studentId, enrollments.courseId) 
+
 }));
