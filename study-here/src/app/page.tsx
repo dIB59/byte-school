@@ -145,6 +145,11 @@ export default function Home() {
           <div className="mt-2">
             <p className="text-sm">Email: <a href="mailto:learncodecraftacademy@gmail.com" className="text-blue-300 hover:text-blue-200 hover:underline">LearnCodecraftAcademy@gmail.com</a></p>
           </div>
+          <Link href="/products">
+        
+    <button>Go to Payment Page</button>
+          </Link>
+      
         </div>
       </section>
     </main>
